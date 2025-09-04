@@ -16,8 +16,8 @@ type AppointmentsListProps = {
   appointments: Appointment[];
   darkMode: boolean;
   setAppointments: React.Dispatch<React.SetStateAction<Appointment[]>>;
-  setEditingAppt: React.Dispatch<React.SetStateAction<Appointment | null>>; // ✅ added
-  editingAppt: Appointment | null; // ✅ added
+  setEditingAppt: React.Dispatch<React.SetStateAction<Appointment | null>>;
+  // removed editingAppt since it’s unused here
 };
 
 const AppointmentsList = ({
@@ -25,7 +25,6 @@ const AppointmentsList = ({
   darkMode,
   setAppointments,
   setEditingAppt,
-  editingAppt,
 }: AppointmentsListProps) => {
   if (appointments.length === 0) {
     return (
@@ -120,6 +119,7 @@ const AppointmentsList = ({
 };
 
 export default AppointmentsList;
+
 
 
 
