@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Salon Staff Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based responsive dashboard built with **React, Vite, and TypeScript** to manage salon operations.  
+The app includes features like managing appointments, availability of staff, and services with light/dark mode support.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Add, edit, and view salon appointments  
+- Manage salon services and staff availability  
+- Dark mode toggle in the header  
+- Responsive design for different screen sizes  
+- Built using **React + TypeScript + Vite**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+- **React (with Hooks)** – component-based UI  
+- **TypeScript** – type safety and better developer experience  
+- **Vite** – fast development & build tool  
+- **TailwindCSS / CSS** – styling 
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **TypeScript Usage**: As a first-time TypeScript user, I defined types for `Service`, `Appointment`, and component props. Passing props between components was different from JSX, but it improved clarity and reduced errors.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Challenges Faced**:  
+  - Understanding and applying TypeScript’s strict type system.  
+  - Learning how branches and pull requests actually work in Git.  
+  - Ensuring dark mode worked consistently across components.  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+## 📦 How to Run Locally
+
+1.  **Clone the repository**  
+   ```bash
+   git clone https://github.com/harithaemi/HarithaManoj-Ociuz.git
+   cd HarithaManoj-Ociuz
+
+   npm install
+   npm run dev
+
+
 ```
