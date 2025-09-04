@@ -77,7 +77,7 @@ const DashBoard = () => {
             appointments={appointments}
             darkMode={darkMode}
             setAppointments={setAppointments}
-            editingAppt={editingAppt}
+           
             setEditingAppt={setEditingAppt}
           />
         </div>
